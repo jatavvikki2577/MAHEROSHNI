@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Maheroshni Micro Service Foundation</title>
+  <meta name="description" content="Contact Maheroshni Micro Service Foundation" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">M</div>
+        <div>
+          <div class="brand-title">Maheroshni Micro Service Foundation</div>
+          <div class="brand-sub">Financial support for individuals & groups</div>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html" class="btn-outline active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>संपर्क करें / Apply for Loan</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Address:</strong> [यहाँ अपना पता डालें]</p>
+          <p><strong>Phone:</strong> +91 [आपका फोन]</p>
+          <p><strong>Email:</strong> <a href="mailto:mrmsfoundation1@gmail.com">mrmsfoundation1@gmail.com</a></p>
+          <p><strong>CIN:</strong> U88900UP2024NPL208817</p>
+        </div>
+
+        <div>
+          <!-- Netlify-ready form: works when hosted on Netlify -->
+          <form name="loan-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="loan-contact">
+            <p style="display:none"><label>Don’t fill: <input name="bot-field"></label></p>
+
+            <label>पूरा नाम</label>
+            <input type="text" name="name" required>
+
+            <label>फोन नंबर</label>
+            <input type="tel" name="phone" required>
+
+            <label>ईमेल</label>
+            <input type="email" name="email">
+
+            <label>लोन प्रकार</label>
+            <select name="loanType">
+              <option>Individual Loan</option>
+              <option>Group Loan</option>
+            </select>
+
+            <label>रिक्वेस्टेड अमाउंट (₹)</label>
+            <input type="number" name="amount" required>
+
+            <label>उद्देश्य / टिप्पणी</label>
+            <textarea name="message" rows="4"></textarea>
+
+            <div style="margin-top:10px">
+              <button class="btn-primary" type="submit">Send Application</button>
+              <button type="reset" class="btn-ghost">Reset</button>
+            </div>
+            <p class="muted" style="margin-top:8px">Tip: For automatic email delivery, deploy this site on Netlify — submissions will go to Netlify's inbox (or configure notifications to your email).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand-title">Maheroshni Micro Service Foundation</div>
+        <div class="muted">© 2025 Maheroshni Micro Service Foundation</div>
+      </div>
+      <div class="muted">
+        Email: <a href="mailto:mrmsfoundation1@gmail.com">mrmsfoundation1@gmail.com</a> | Phone: +91 [आपका फोन]
+      </div>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
